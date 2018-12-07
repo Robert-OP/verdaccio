@@ -11,7 +11,7 @@
 3. Install Verdaccio, again (I used) Powershell as Administrator & run [`npm install -g verdaccio`](https://www.npmjs.com/package/verdaccio)
 4. Test & run in the terminal `verdaccio` - this will show information about the config file & [http address](http://localhost:4873) of the verdaccio npm private server 
 
-**Remember** - in order to run npm modules/packages (that where installed globally (-g) as above) in the terminal/cmd/powershell, the **npm folder** (e.g. my npm folder is located in `C:\Users\ropo\AppData\Roaming\npm`) needs to be added to Windows PATH variable !
+- **Remember** - in order to run npm modules/packages (that where installed globally (-g) as above) in the terminal/cmd/powershell, the **npm folder** (e.g. my npm folder is located in `C:\Users\ropo\AppData\Roaming\npm`) needs to be added to Windows PATH variable !
 
 ## Getting started to publish package
 0. We want to make directory -> initialize npm package -> run verdaccio -> add user -> publish package 
@@ -28,7 +28,7 @@
 ## Setup on a server to pull package [to do]
 0. We want to pull and use our package through `npm install --save package_name` in other projects for code reusability
 
-### References & other useful links
+## References & other useful links
 - [Verdaccio installation](https://verdaccio.org/docs/en/installation)
 - [Verdaccio github](https://github.com/verdaccio/verdaccio)
 - [Publish your own npm package](https://hackernoon.com/publish-your-own-npm-package-946b19df577e)
