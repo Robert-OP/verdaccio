@@ -1,6 +1,9 @@
-# NPM Package Setup with [Verdaccio](https://verdaccio.org/docs/en/what-is-verdaccio) private npm proxy registry
+# NPM Package Setup with [Verdaccio](https://verdaccio.org/docs/en/what-is-verdaccio) private npm registry
 
-**Why ?** - publish package/module in the growing npm ecosystem - reusability of code/components - easy to share between developers/departments
+**Why ?** 
+- publish package/module in the growing npm ecosystem 
+- reusability of code/components throughout projects
+- easy to share between developers/departments
 
 ## Windows Setup  
 1. Install [Node LTS version](https://nodejs.org/en/) & test in terminal: `node -v && npm -v`
