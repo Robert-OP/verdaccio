@@ -12,7 +12,7 @@
 
 - **Remember** - in order to run npm modules/packages (that where installed globally (-g) as above) in the terminal/cmd/powershell, the **npm folder** (e.g. my npm folder is located in `C:\Users\ropo\AppData\Roaming\npm`) needs to be added to Windows PATH variable !
 
-## Getting started to publish package
+## Getting started to publish package on Localhost
 0. We want to run verdaccio -> make a package directory -> initialize npm package -> add user -> publish package 
 1. Open the **first terminal** & run: `verdaccio` - this will show information about the config file & [http address](http://localhost:4873) of the verdaccio npm private server
 2. Open a **second terminal** & run: `mkdir demo-package` & go into it `cd demo-package`
@@ -25,8 +25,13 @@
 - **Beware** - in order to re-publish the same package you will need to update/increment the package "version" in package.json
 - **Useful** - If you want to delete a package or only a version of it, you can delete it from the `storage` of verdaccio on the server that hosts the package
 
-## Setup on a server to pull package [to do]
-0. We want to pull and use our package through `npm install --save package_name` in other projects for code reusability
+## Install & setup Verdaccio as a Windows Service
+0. Need steps 1 & 2 from Windows Setup up top !
+1. Open a terminal & run: `mkdir c:\verdaccio` & go into it `cd c:\verdaccio`
+2. Then, install verdaccio locally: `npm install verdaccio`
+3. Run verdaccio in terminal: `config.yaml` 
+4. Create config file in the same folder `c:\verdaccio\config.yaml`
+5. [Windows Service Setup](https://docs.microsoft.com/en-us/dotnet/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer)
 
 ## References & other useful links
 - [Verdaccio installation](https://verdaccio.org/docs/en/installation)
@@ -35,3 +40,5 @@
 - [NPM module boilerplate](https://github.com/flexdinesh/npm-module-boilerplate)
 - [Host your own private npm repository with verdaccio](https://medium.com/devopslinks/host-your-own-private-npm-repository-with-verdaccio-e8a3202b97c5)
 - [bitsrc - alternative to Verdaccio may be a commecial & better solution](https://bitsrc.io/)
+- [Verdaccio as a Windows Service](https://verdaccio.org/docs/en/windows)
+- [Create a Windows Service](https://docs.microsoft.com/en-us/dotnet/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer)
